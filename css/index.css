@@ -1,0 +1,178 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.header {
+    background-color: #000000;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff7ace;
+}
+
+.cover {
+    height: fit-content;
+    background-color: #2d1a26;
+}
+
+.cover p {
+    color: #ff7ace;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 50px;
+
+}
+
+.cover h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+.about{
+    height: 70vh;
+}
+.left {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Screenshot 2024-09-13 174504.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+    z-index: -1;
+}
+.left h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.right{
+    background-color: #000000;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.right span{
+    color: #ff7ace;
+    font-size: larger;
+}
+.Education{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d1a26;
+    padding: 30px;
+}
+.lable{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+}
+.Education a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ff7ace;
+    border: 2px solid #ff7ace ;
+    padding: 5px;
+    border-radius: 3px;
+}
+.Education .link{
+    text-align: center;
+}
+.Education h1,
+.projects h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px;
+    font-weight: 800;
+    color:#ff7ace;
+    width: 100%;
+}
+.projects{
+    background-color: #2d1a26;
+}
+.box {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.box span {
+    position: absolute;
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.project-link:hover .box::before {
+    opacity: 0.7;
+}
+
+.project-link:hover .box span {
+    opacity: 1;
+}
+.contact{
+    padding: 50px;
+    background-color: #000000;
+
+}
+.contact h1{
+    background-color: #000000;
+    color: #ff7ace;
+}
+.contact h3{
+    color: #ffffff;
+}
+.contact a{
+    color:#ff7ace;
+}
+.footer{
+    background-color: #2d1a26;
+    color: #ffffff;
+}
